@@ -1,0 +1,9 @@
+{
+	"header":{
+		"count":2
+	},
+	"containerSet": [{ 
+		"name":"test", "bridge":"kpu_network"},{
+		"name":"nginx","bridge":"kpu_network"
+		}]
+}
