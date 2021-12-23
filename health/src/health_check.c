@@ -19,7 +19,7 @@ void parsingContainerAddress(Container* con);
 void startPing(void*);
 
 void restartContainer(Container* con){
-	char command[100];
+	char command[150];
 	
 	fprintf(stdout, "docker restart %s : \n", con->name);
 	sprintf(command, "docker restart %s\n", con->name);
