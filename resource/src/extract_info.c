@@ -7,9 +7,9 @@
 
 #include "../include/extract.h"
 
-static char usage_query[150];// = "curl -G \"http:\/\/10.0.42.131:9090/api/v1/query\" --data-urlencode \"query=rate(container_cpu_usage_seconds_total{id=~\\\"/docker/.*\\\"}[1m])\"";
+static char usage_query[200];// = "curl -G \"http:\/\/10.0.42.131:9090/api/v1/query\" --data-urlencode \"query=rate(container_cpu_usage_seconds_total{id=~\\\"/docker/.*\\\"}[1m])\"";
 
-static char machine_cpu_cores_query[100];// = "curl \"http://10.0.42.131:9090/api/v1/query?query=sum(machine_cpu_cores)\"";
+static char machine_cpu_cores_query[200];// = "curl \"http://10.0.42.131:9090/api/v1/query?query=sum(machine_cpu_cores)\"";
 
 char* json;
 char* json_machine;
