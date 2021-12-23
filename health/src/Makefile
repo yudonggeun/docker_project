@@ -21,5 +21,5 @@ clean:
 	rm -f $(TARGET)
 
 $(TARGET): $(OBJS)
-	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+	export LD_LIBRARY_PATH=$$LD_LIBRARY_PATH:/usr/local/lib
 	$(CC) -o $@ $(OBJS) $(CFLAGS) $(LDBS)
