@@ -54,7 +54,7 @@ void updateCpuMAX(Resource* con){
 		return;
 		}
 	
-	char command[100];
+	char command[200];
 	sprintf(command, "%s%.1f %s", command_header, con->max_cpu_usage, con->name);
 	
 	fprintf(stdout, "command : %s\n", command);
